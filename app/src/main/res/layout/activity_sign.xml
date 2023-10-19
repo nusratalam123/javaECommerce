@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/register"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+
+    <ImageView
+        android:id="@+id/sign_applogo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/applogo"/>
+    <EditText
+        android:id="@+id/signup_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_applogo"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/input_button"
+        android:hint="User Name"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+
+        />
+    <EditText
+        android:id="@+id/signup_phone_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_name_field"
+        android:padding="17dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_button"
+        android:hint="phone number"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+
+        />
+    <EditText
+        android:id="@+id/signup_password_feild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_phone_field"
+        android:padding="17dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_button"
+        android:hint="Password"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_password_feild"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:padding="20dp"
+        android:text="create a account"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>
